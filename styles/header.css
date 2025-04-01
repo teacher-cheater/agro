@@ -1,0 +1,38 @@
+.header{
+    background-color: #334B35;
+}
+
+.wrap{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    padding: 39px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    gap: 50px;
+}
+
+.menu a {
+    color: #fff;
+}
+
+.menu a:hover{
+    /* display: block; */
+    border-bottom: 2px solid #F7C35F;
+    /* transform: scale(2); */
+}
+
+.header-icon:hover{
+    /* увнличение */
+    /* transform: scale(1.2); */
+    /* разворот по градусам */
+    /* transform: rotate(135deg); */
+
+    /* transform: skew(30deg, 15deg); */
+
+    transform: translate(50px, 40px);
+}

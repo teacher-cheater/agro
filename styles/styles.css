@@ -1,0 +1,125 @@
+.product-ideas {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.cards {
+    border: 2px solid red;
+    display: grid;
+    /* grid-template-columns: 300px 300px 300px 300px; */
+    gap: 20px;
+    /* grid-template-columns: repeat(3, 33.333%); */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-rows: repeat(4, 1fr); */
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.card {
+    grid-column: span 4;
+    display: flex;
+    flex-direction: column;
+    /* flex: 1 0 calc(25% - 30px); */
+    padding: 27px 30px 36px 30px;
+    border: 2px solid #4D533C;
+    /* transform: skew(30deg, 15deg); */
+    /* transform: translate(50px, 40px); */
+    position: relative;
+}
+
+
+.card:hover .card-desc {
+    transform: rotate(45deg);
+}
+
+.card:hover .card-title {
+    transform: rotate(-45deg);
+}
+
+.card:hover::after {
+    opacity: 1;
+    right: 0;
+}
+
+.card::after {
+    content: "";
+    background: url('../images/frontendvsback.jpg') center / cover no-repeat;
+    width: 80px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 1s ease-in-out 0s;
+}
+
+.card-x4 {
+    grid-column: span 3;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.42;
+    color: #4D533C;
+    margin: 0 0 20px 0;
+    transition: all 1s ease-in-out 0s;
+}
+
+.crad-x2 {
+    grid-column: span 6;
+}
+
+.card-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    color: #21384299;
+    margin: 0 0 30px 0;
+    flex: auto;
+    transition: all 1s ease-in-out 0s;
+}
+
+.card-link {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.15;
+    color: #D4D6D4;
+}
+
+.card-link:hover {
+    color: #FFD723;
+}
+
+.main-btn {
+    border: none;
+    border-radius: 20px;
+    background: rgb(247, 195, 95);
+    padding: 25px 50px 25px 50px;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease-in 0s;
+}
+
+.main-btn:hover {
+    background: rgb(247, 208, 134);
+}
+
+.main-btn:focus {
+    background: rgb(197, 141, 33);
+    border: none;
+    outline: none;
+}
+
+.main-btn:active {
+    background: rgb(162, 108, 6);
+}
+
+.burger-menu{
+    display: none;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+}

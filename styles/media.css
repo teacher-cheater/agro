@@ -1,0 +1,64 @@
+@media (max-width: 1023.98px) {
+    .card-title {
+        font-size: 20px;
+        color: #e12b2b;
+    }
+
+    .card-desc {
+        display: none;
+    }
+
+    .main-btn {
+        border-radius: 20px;
+        background: rgb(247, 195, 95);
+        padding: 18px 44px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .cards {
+        border: none;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .card-title {
+        font-size: 14px;
+        color: #261ca9;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        grid-column: span 1;
+    }
+
+}
+
+@media (max-width: 543.98px) {
+    .card-desc {
+        display: flex;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-column: span 1;
+    }
+
+}
